@@ -1,0 +1,41 @@
+.CuestionCard-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    background: #ebfeff;
+    border-radius: 10px;
+    border: 2px solid #0085a3;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.CuestionCard-PanelButton{
+    width: 90%;
+}
+
+.CuestionCard-button{
+    width: 90%;
+    border-radius: 10px;
+    border: solid 3px  #fff;
+    background-image: linear-gradient(90deg, #56ccff, #6eafb4);
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    height: 40px;
+    margin: 5px 0;
+}
+
+.CuestionCard-button:hover{
+    opacity: .7;
+}
+
+.correct{
+    background-image: linear-gradient(90deg, #56FFA4, #59BC86);
+}
+
+.wrong{
+    background-image: linear-gradient(90deg, #FF5656, #C16868)
+}
