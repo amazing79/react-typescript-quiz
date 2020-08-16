@@ -1,6 +1,6 @@
 ## React Quiz con Typescript
 
-Proyecto realizado siguiendo el siguiente tutorial de como crear [Create React App](https://github.com/facebook/create-react-app). Si bien sigue las convenciones del tutorial, se hicieron modificaciones para hacer el código mas limpio. Entre ellas:
+Proyecto realizado siguiendo el siguiente tutorial de como crear [Quiz App With React TypeScript](https://www.freecodecamp.org/news/how-to-build-a-quiz-app-using-react-and-typescript/). Si bien sigue las convenciones del tutorial, se hicieron modificaciones para hacer el código mas limpio. Entre ellas:
 
 - Se crearon todos los tipos necesarios en el archivo util.ts, los cuales luego se importaran según fuera el caso. 
 - Para facilitar la lógica, se creo el tipo enumerado GameStatus
