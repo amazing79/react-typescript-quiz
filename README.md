@@ -21,3 +21,5 @@ o
 Se debe abrir un navegador con el proyecto.<br />
 De no ser así, abre [http://localhost:3000](http://localhost:3000) para visualizaro en tu navegador.
 
+finalmente, si queres ver como quedo, [probalo online](https://react-typescript-quiz.vercel.app/)
+
