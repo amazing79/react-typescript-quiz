@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react'
 //types 
 import {GameStatus, TOTAL_QUESTIONS, AnswerObject, QuestionsState, Actions} from '../../assets/js/utils'
-import CuestionCard from '../QuestionCard/CuestionCard'
-import Score from '../Score/Score'
+import CuestionCard from './QuestionCard/CuestionCard'
+import Score from './Score/Score'
 //API
 import {fetchQuizQuestions} from '../../assets/js/API'
 //context

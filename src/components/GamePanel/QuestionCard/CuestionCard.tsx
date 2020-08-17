@@ -1,7 +1,7 @@
 import React from 'react'
 import './CuestionCard.css'
 
-import {AnswerObject} from '../../assets/js/utils'
+import {AnswerObject} from '../../../assets/js/utils'
 //aclaracion, en el tutorial usa un retorno implicito, seria algo como 
 // const CuestionCard = () => ( ... y aca todo el codigo, pero es cuestion de gustos)
 /*
