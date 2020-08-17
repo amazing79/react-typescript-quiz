@@ -21,5 +21,9 @@ o
 Se debe abrir un navegador con el proyecto.<br />
 De no ser así, abre [http://localhost:3000](http://localhost:3000) para visualizaro en tu navegador.
 
+### Algunos cambios
+
+Para darlos unos toques mas a la App, se agrego la opción de que el usuario pueda elegir el tipo de Quiz, Topic y dificultad. Notar que algunas combinaciones no traen preguntas.
+
 finalmente, si queres ver como quedo, [probalo online](https://react-typescript-quiz.vercel.app/)
 
