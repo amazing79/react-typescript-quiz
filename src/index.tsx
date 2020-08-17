@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+//import App from './App';
+import NewApp from './NewApp'
+import SettingProvider from './context/SettingProvider'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SettingProvider>
+      <NewApp />
+    </SettingProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
