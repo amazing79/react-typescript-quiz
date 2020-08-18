@@ -17,6 +17,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
 }
 
 h1{
@@ -59,4 +60,15 @@ h1{
   margin: 20px 5px;
   padding: 0 40px;
   font-weight: 700;
+}
+
+
+@media screen and (max-width:800px){
+  h1{
+    font-size: 40px;
+  }
+
+  body{
+    font-size: 14px;
+  }
 }
