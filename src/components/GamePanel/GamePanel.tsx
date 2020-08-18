@@ -57,22 +57,26 @@ const GamePanel = (props:any) => {
 
   useEffect(()=>{
       const startGame = async () =>  {
-        setGameStatus(GameStatus.LOADING);
+        let actualStatus = GameStatus.LOADING
+        setGameStatus(actualStatus);
         let data =  await fetchQuizQuestions(TOTAL_QUESTIONS, myContext.getConfiguration());
         setQuestions(data);
         setScore(0);
         setNumber(0);
-        setUserAnswers([])
-        setGameStatus(GameStatus.PLAYING);
+        setUserAnswers([]);
+        actualStatus = (data.length !==0 ) ? GameStatus.PLAYING : GameStatus.IDDLE;
+        setGameStatus(actualStatus);
        };
+
       startGame();
     }
     ,[myContext]);
 
     return (
       <>
-       { gameStatus === GameStatus.LOADING ? (<p className="loading">loading, please wait!</p>)
-        : (<>
+       { gameStatus === GameStatus.LOADING ? (<p className="loading">loading, please wait!</p>) : null}
+       { gameStatus === GameStatus.IDDLE ? (<p className="loading">Actual Setting don't work! Please Change those!</p>): null}
+       { gameStatus === GameStatus.PLAYING || gameStatus === GameStatus.FINISHED ? (<>
               <Score fine={score} />
               <CuestionCard 
                 questionNr={number + 1}
@@ -83,7 +87,7 @@ const GamePanel = (props:any) => {
                 callback={checkAnswer}
               />
             </>
-          )
+          ) : null
         }
         {
           gameStatus === GameStatus.PLAYING && userAnswers.length === number + 1 && number < TOTAL_QUESTIONS -1 
